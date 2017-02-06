@@ -110,7 +110,7 @@ function write_profile_d_script() {
 function write_export() {
   output_section "Writing export for multi-buildpack support"
 
-  local export_line="export PATH=$(platform_tools_path):$(erlang_path)/bin:$(elixir_path)/bin:\$PATH
+  local export_line="export PATH=/app/bin:$(platform_tools_path):$(erlang_path)/bin:$(elixir_path)/bin:\$PATH
                      export LC_CTYPE=en_US.utf8
                      export MIX_ENV=${MIX_ENV}"
 
